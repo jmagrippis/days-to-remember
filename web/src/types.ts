@@ -27,3 +27,16 @@ export type Query = {
 export type QueryGroupArgs = {
   id: Scalars['ID']
 }
+export type GroupQueryVariables = {
+  id: Scalars['ID']
+}
+
+export type GroupQuery = { __typename?: 'Query' } & {
+  group: Maybe<
+    { __typename?: 'Group' } & Pick<Group, 'id' | 'name'> & {
+        days: Array<
+          { __typename?: 'Day' } & Pick<Day, 'id' | 'name' | 'timestamp'>
+        >
+      }
+  >
+}

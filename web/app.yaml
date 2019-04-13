@@ -1,2 +1,4 @@
 runtime: nodejs10
 service: default
+env_variables:
+  GRAPHQL_URL: 'https://graphql-days-to-remember.appspot.com'
