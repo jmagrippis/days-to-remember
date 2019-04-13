@@ -1,7 +1,7 @@
-import { greeting } from './greeting'
+import { group } from './group'
 
 export const resolvers = {
   Query: {
-    greeting
+    group
   }
 }

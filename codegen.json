@@ -1,6 +1,12 @@
 {
   "schema": "http://localhost:3010",
   "overwrite": true,
+  "config": {
+    "prepend": ["import { GraphQLDateTime } from 'graphql-iso-date'"],
+    "scalars": {
+      "DateTime": "GraphQLDateTime"
+    }
+  },
   "generates": {
     "./graphql/src/types.ts": {
       "plugins": ["typescript"]

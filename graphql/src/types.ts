@@ -8,6 +8,7 @@ export type Scalars = {
   Float: number
   /** The `Upload` scalar type represents a file upload. */
   Upload: any
+  DateTime: GraphQLDateTime
 }
 
 export enum CacheControlScope {
@@ -15,10 +16,22 @@ export enum CacheControlScope {
   Private = 'PRIVATE'
 }
 
-export type Query = {
-  greeting: Scalars['String']
+export type Day = {
+  id: Scalars['ID']
+  name: Scalars['String']
+  timestamp: Scalars['Int']
 }
 
-export type QueryGreetingArgs = {
-  name?: Maybe<Scalars['String']>
+export type Group = {
+  id: Scalars['ID']
+  name: Scalars['String']
+  days: Array<Day>
+}
+
+export type Query = {
+  group?: Maybe<Group>
+}
+
+export type QueryGroupArgs = {
+  id: Scalars['ID']
 }
