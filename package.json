@@ -1,5 +1,5 @@
 {
-  "name": "create-graphql-app",
+  "name": "days-to-remember",
   "version": "0.1.0",
   "private": true,
   "author": "Johnny Magrippis <j@magrippis.com>",
@@ -23,6 +23,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jmagrippis/create-graphql-app"
+    "url": "https://github.com/jmagrippis/days-to-remember"
   }
 }

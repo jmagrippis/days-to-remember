@@ -1,5 +1,5 @@
 {
-  "name": "create-graphql-app-graphql",
+  "name": "days-to-remember-graphql",
   "version": "0.1.0",
   "description": "The graphql server for create-graphql-app",
   "main": "dist/index.js",
@@ -8,7 +8,7 @@
     "dev": "PORT=3010 ./startDev.sh",
     "test": "jest",
     "build": "NODE_ENV=production tsc",
-    "deploy": "yarn build && gcloud app deploy --project=create-graphql-app"
+    "deploy": "yarn build && gcloud app deploy --project=days-to-remember"
   },
   "dependencies": {
     "apollo-server": "^2.4.8",
