@@ -10,7 +10,7 @@ export const App = () => (
     <React.Fragment>
       <header>Days to remember</header>
       <Group id="hardcoded-group-id" />
-      <footer>Made with 💜 in London</footer>
+      <footer>Made in London</footer>
     </React.Fragment>
   </ApolloProvider>
 )
