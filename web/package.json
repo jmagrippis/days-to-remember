@@ -16,11 +16,13 @@
     "react": "^16.8.6",
     "react-apollo": "^2.5.4",
     "react-dom": "^16.8.6",
-    "reset-css": "^4.0.1"
+    "reset-css": "^4.0.1",
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
     "@types/react": "^16.8.13",
     "@types/react-dom": "^16.8.4",
+    "@types/styled-components": "^4.1.14",
     "parcel-bundler": "^1.12.3",
     "typescript": "^3.4.3"
   }
