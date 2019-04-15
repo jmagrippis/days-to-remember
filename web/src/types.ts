@@ -6,37 +6,75 @@ export type Scalars = {
   Boolean: boolean
   Int: number
   Float: number
+  DateTime: string
 }
 
 export type Day = {
   id: Scalars['ID']
   name: Scalars['String']
-  timestamp: Scalars['Int']
+  dateTime: Scalars['DateTime']
+  milestones: Array<Milestone>
 }
 
 export type Group = {
   id: Scalars['ID']
   name: Scalars['String']
   days: Array<Day>
+  members: Array<User>
+}
+
+export type Milestone = {
+  id: Scalars['ID']
+  name: Scalars['String']
+  dateTime: Scalars['DateTime']
+  suggestions: Array<Suggestion>
+  day: Day
+  group: Group
+  description?: Maybe<Scalars['String']>
 }
 
 export type Query = {
   group?: Maybe<Group>
+  milestonesForGroup: Array<Milestone>
 }
 
 export type QueryGroupArgs = {
   id: Scalars['ID']
+}
+
+export type QueryMilestonesForGroupArgs = {
+  groupId: Scalars['ID']
+}
+
+export type Suggestion = {
+  id: Scalars['ID']
+  name: Scalars['String']
+  milestone: Milestone
+  suggestedBy: User
+  description?: Maybe<Scalars['String']>
+}
+
+export type User = {
+  id: Scalars['ID']
+  name: Scalars['String']
 }
 export type GroupQueryVariables = {
   id: Scalars['ID']
 }
 
 export type GroupQuery = { __typename?: 'Query' } & {
-  group: Maybe<
-    { __typename?: 'Group' } & Pick<Group, 'id' | 'name'> & {
-        days: Array<
-          { __typename?: 'Day' } & Pick<Day, 'id' | 'name' | 'timestamp'>
-        >
-      }
+  group: Maybe<{ __typename?: 'Group' } & Pick<Group, 'id' | 'name'>>
+}
+
+export type MilestonesForGroupQueryVariables = {
+  groupId: Scalars['ID']
+}
+
+export type MilestonesForGroupQuery = { __typename?: 'Query' } & {
+  milestonesForGroup: Array<
+    { __typename?: 'Milestone' } & Pick<
+      Milestone,
+      'id' | 'name' | 'dateTime'
+    > & { day: { __typename?: 'Day' } & Pick<Day, 'id'> }
   >
 }

@@ -772,6 +772,11 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
+"@types/memoize-one@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@types/memoize-one/-/memoize-one-4.1.1.tgz#41dd138a4335b5041f7d8fc038f9d593d88b3369"
+  integrity sha512-+9djKUUn8hOyktLCfCy4hLaIPgDNovaU36fsnZe9trFHr6ddlbIn2q0SEsnkCkNR+pBWEU440Molz/+Mpyf+gQ==
+
 "@types/prop-types@*":
   version "15.7.0"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.0.tgz#4c48fed958d6dcf9487195a0ef6456d5f6e0163a"
@@ -795,6 +800,13 @@
   integrity sha512-hYt5a+Kj/Cy0102b+WZpNhnm1AWNz6HnVYwk41BSDZpDoJweo1BuJv1FStd6ClzCdTPJlfImF8ZqpM2xDoO2aA==
   dependencies:
     "@types/prop-types" "*"
+    "@types/react" "*"
+
+"@types/react-timeago@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@types/react-timeago/-/react-timeago-4.1.0.tgz#e8ebc0add9de6d768fda610922879382bdc2f327"
+  integrity sha512-rQihM3unIJ2i3gxJhoM9hktqrMsrqv2OVyz4zWG7T6hUdmt4V5IGs6B65EJgo+4Rt9Z5pscc0H9YcZX4hPuLkA==
+  dependencies:
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^16.8.13":
@@ -3280,7 +3292,7 @@ mdn-data@~1.1.0:
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-1.1.4.tgz#50b5d4ffc4575276573c4eedb8780812a8419f01"
   integrity sha512-FSYbp3lyKjyj3E7fMl6rYvUdX0FBXaluGqlFoYESWQlyUTq8R+wp0rkFxoYFqZlHCvsUXGjyJmLQSnXToYhOSA==
 
-memoize-one@^5.0.0:
+memoize-one@^5.0.0, memoize-one@^5.0.4:
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-5.0.4.tgz#005928aced5c43d890a4dfab18ca908b0ec92cbc"
   integrity sha512-P0z5IeAH6qHHGkJIXWw0xC2HNEgkx/9uWWBQw64FJj3/ol14VYdfVGWWr0fXfjhhv3TKVIqUq65os6O4GUNksA==
@@ -4409,6 +4421,11 @@ react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
+
+react-timeago@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/react-timeago/-/react-timeago-4.4.0.tgz#4520dd9ba63551afc4d709819f52b14b9343ba2b"
+  integrity sha512-Zj8RchTqZEH27LAANemzMR2RpotbP2aMd+UIajfYMZ9KW4dMcViUVKzC7YmqfiqlFfz8B0bjDw2xUBjmcxDngA==
 
 react@^16.8.6:
   version "16.8.6"

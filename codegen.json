@@ -2,6 +2,11 @@
   "schema": "./graphql/src/**/*.ts",
   "documents": "./web/src/**/*.tsx",
   "overwrite": true,
+  "config": {
+    "scalars": {
+      "DateTime": "string"
+    }
+  },
   "generates": {
     "./graphql/src/types.ts": {
       "plugins": ["typescript"]

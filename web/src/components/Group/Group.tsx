@@ -4,7 +4,7 @@ import { Query } from 'react-apollo'
 import styled from 'styled-components'
 
 import { QueryGroupArgs, GroupQuery } from '../../types'
-import { Days } from './Days/Days'
+import { MilestonesOverview } from './MilestonesOverview/MilestonesOverview'
 import { styles } from '../styles'
 
 const GET_GROUP = gql`
@@ -12,11 +12,6 @@ const GET_GROUP = gql`
     group(id: $id) {
       id
       name
-      days {
-        id
-        name
-        timestamp
-      }
     }
   }
 `
@@ -44,7 +39,7 @@ export const Group = ({ id }: Props) => (
       return (
         <div>
           <Header>{name}</Header>
-          <Days days={days} />
+          <MilestonesOverview groupId={id} />
         </div>
       )
     }}

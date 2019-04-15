@@ -7,7 +7,9 @@ export const group = (_: object, { id }: QueryGroupArgs): Group => ({
     {
       id: 'day-id',
       name: 'First Date',
-      timestamp: 1550084400
+      dateTime: '2019-02-13T19:00:00.000Z',
+      milestones: []
     }
-  ]
+  ],
+  members: []
 })
