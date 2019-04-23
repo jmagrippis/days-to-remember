@@ -9,7 +9,7 @@ export type Scalars = {
   DateTime: string
 }
 
-export type Day = {
+export type Event = {
   id: Scalars['ID']
   name: Scalars['String']
   dateTime: Scalars['DateTime']
@@ -19,7 +19,7 @@ export type Day = {
 export type Group = {
   id: Scalars['ID']
   name: Scalars['String']
-  days: Array<Day>
+  events: Array<Event>
   members: Array<User>
 }
 
@@ -28,7 +28,7 @@ export type Milestone = {
   name: Scalars['String']
   dateTime: Scalars['DateTime']
   suggestions: Array<Suggestion>
-  day: Day
+  event: Event
   group: Group
   description?: Maybe<Scalars['String']>
 }

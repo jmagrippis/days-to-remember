@@ -34,7 +34,7 @@ export const Group = ({ id }: Props) => (
         return `Group ${id} not found!`
       }
 
-      const { name, days } = data.group
+      const { name } = data.group
 
       return (
         <div>

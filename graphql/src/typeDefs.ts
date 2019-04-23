@@ -21,12 +21,12 @@ export const typeDefs = gql`
     name: String!
     dateTime: DateTime!
     suggestions: [Suggestion!]!
-    day: Day!
+    event: Event!
     group: Group!
     description: String
   }
 
-  type Day {
+  type Event {
     id: ID!
     name: String!
     dateTime: DateTime!
@@ -36,7 +36,7 @@ export const typeDefs = gql`
   type Group {
     id: ID!
     name: String!
-    days: [Day!]!
+    events: [Event!]!
     members: [User!]!
   }
 

@@ -38,7 +38,7 @@ const GET_MILESTONES_FOR_GROUP = gql`
     milestonesForGroup(groupId: $groupId) {
       id
       name
-      day {
+      event {
         id
       }
       dateTime
